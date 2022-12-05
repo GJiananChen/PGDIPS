@@ -19,7 +19,7 @@ Required packages
 > Train PGDIPS on provided target images:
 
 ```
-  $ python main.py config=he.cfg
+  $ python pgdips.py config=he.cfg
 ```
 
 > Switch between different types of stained images, use option:
