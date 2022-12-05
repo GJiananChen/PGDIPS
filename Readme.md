@@ -2,6 +2,10 @@
 
 Pytorch implementation for the manuscript "Physics-guided Deep Learning Enables Generalized Stain Deconvolution of Histopathology Images"
 
+### Known issues with the current version
+The concentration maps are rotated 90 degrees likely due to we recently switched to skimage.io.imread(). However the reconstructed image and the deconvolution process is not affected. 
+We are working on a fix. For a temporary solution, please uncomment line 103 and comment line 104-105 in pgdips.py.
+
 ### Installation
 
 Install [anaconda/miniconda](https://docs.conda.io/en/latest/miniconda.html)
