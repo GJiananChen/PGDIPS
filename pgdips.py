@@ -199,12 +199,15 @@ class Separation(object):
         self.parameters += [p for p in self.stain2.parameters()]
 
         if self.use_SCF:
+            self.SCF1.requires_grad = True
+            self.SCF2.requires_grad = True
             self.parameters += [self.SCF1, self.SCF2]
 
         if self.num_stains == 3:
             self.parameters += [p for p in self.Con3_net.parameters()]
             self.parameters += [p for p in self.stain3.parameters()]
             if self.use_SCF:
+                self.SCF3.requires_grad = True
                 self.parameters += [self.SCF3]
 
     def _init_nets(self):
