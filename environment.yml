@@ -25,7 +25,7 @@ dependencies:
   - freetype=2.10.4=hd328e21_0
   - fsspec=2022.2.0=pyhd3eb1b0_0
   - giflib=5.2.1=h62dcd97_0
-  - icc_rt=2019.0.0=h0cc432a_1
+  - icc_rt>=2019.0.0
   - icu=58.2=ha925a31_3
   - idna=3.3=pyhd3eb1b0_0
   - imagecodecs=2021.8.26=py39ha1f97ea_0
@@ -54,7 +54,7 @@ dependencies:
   - networkx=2.7.1=pyhd3eb1b0_0
   - numpy=1.21.5=py39h7a0a035_1
   - numpy-base=1.21.5=py39hca35cd5_1
-  - openjpeg=2.4.0=h4fc8c34_0
+  - openjpeg>=2.4.0
   - openssl=1.1.1n=h2bbff1b_0
   - packaging=21.3=pyhd3eb1b0_0
   - partd=1.2.0=pyhd3eb1b0_1
@@ -78,7 +78,7 @@ dependencies:
   - scikit-video=1.1.11=pyh24bf2e0_0
   - scipy=1.7.3=py39h0a974cb_0
   - setuptools=61.2.0=py39haa95532_0
-  - sip=4.19.13=py39hd77b12b_0
+  - sip>=4.19.0
   - six=1.16.0=pyhd3eb1b0_1
   - snappy=1.1.9=h6c2663c_0
   - sqlite=3.38.2=h2bbff1b_0
@@ -99,6 +99,6 @@ dependencies:
   - xz=5.2.5=h62dcd97_0
   - yaml=0.2.5=he774522_0
   - zfp=0.5.5=hd77b12b_6
-  - zlib=1.2.12=h8cc25b3_1
-  - zstd=1.4.9=h19a0ad4_0
+  - zlib>=1.2.0
+  - zstd>=1.4.0
 prefix: C:\Users\Jianan\miniconda3\envs\PGDIP
