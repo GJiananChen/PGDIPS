@@ -36,7 +36,7 @@ Required packages
 [--config]      # he.cfg, ihc.cfg, alcianblue.cfg, DeepLIIF6.cfg, fibronectin.cfg, SMACD34.cfg, trichrome.cfg
 ```
 
-## Training on your own data by creating a configuration file (ideal resolution is 10x-40x)
+## Training on your own data (minimum 5x resolution, ideally 10x-40x) by creating a configuration file 
 
 1. Place patch files as `input\[image_name]`. Supported formats are `.jpg, .png, .tiff and .tif`.
 
