@@ -1,6 +1,6 @@
 ## PGDIPS: Physics-guided deep image prior for stain deconvolution
 
-Pytorch implementation for the manuscript "Physics-guided Deep Learning Enables Generalized Stain Deconvolution of Histopathology Images"
+Pytorch implementation for the manuscript "General stain deconvolution of histopathology images with physics-guided deep learning"
 
 ### Known issues with the current version
 The estimated concentration maps are rotated 90 degrees when they are saved in the output folder, likely due to our recent switch to `skimage.io.imread()`. However the deconvolution process, colored concentration maps and the reconstructed image are not affected. 
