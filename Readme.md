@@ -1,6 +1,6 @@
 ## PGDIPS: Physics-guided deep image prior for stain deconvolution
 
-Pytorch implementation for the manuscript "General stain deconvolution of histopathology images with physics-guided deep learning"
+Pytorch implementation for the manuscript "[General stain deconvolution of histopathology images with physics-guided deep learning](https://www.biorxiv.org/content/10.1101/2022.12.06.519385v1)" 
 
 ### Known issues with the current version
 The estimated concentration maps are rotated 90 degrees when they are saved in the output folder, likely due to our recent switch to `skimage.io.imread()`. However the deconvolution process, colored concentration maps and the reconstructed image are not affected. 
@@ -148,7 +148,18 @@ This code is inspired by [DoubleDIP](https://github.com/yossigandelsman/DoubleDI
 If you use the code or results in your research, please use the following BibTeX entry.
 
 ```
-@
+@article {ChenPGDIPS,
+	author = {Chen, Jianan and Liu, Lydia Y and Han, Wenchao and Wang, Dan and Cheung, Alison M and Tsui, Hubert and Martel, Anne L},
+	title = {General stain deconvolution of histopathology images with physics-guided deep learning},
+	elocation-id = {2022.12.06.519385},
+	year = {2022},
+	doi = {10.1101/2022.12.06.519385},
+	publisher = {Cold Spring Harbor Laboratory},
+	URL = {https://www.biorxiv.org/content/early/2022/12/10/2022.12.06.519385},
+	eprint = {https://www.biorxiv.org/content/early/2022/12/10/2022.12.06.519385.full.pdf},
+	journal = {bioRxiv}
+}
+
 ```
 
 ## 
