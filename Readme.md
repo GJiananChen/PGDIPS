@@ -8,13 +8,20 @@ Python version requirement: 3.9+
 
 The easiest installation is through Anaconda or [anaconda/miniconda](https://docs.conda.io/en/latest/miniconda.html)
 
-All required packages are specified in `environment.yml`, the installation may take 5-10 minutes, partly depending on internet speed.
+```
+  $ conda env create --name pgdips 
+  $ conda activate pgdips
+  $ pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
+  $ pip3 install -r requirements.txt
+```
+
+> **_NOTE:_** Please check if your graphics card is compatible with the following the packages: `cudatoolkit=11.6` and `pytorch 1.13.0`. If your GPU will not support them, you can downgrade `pytorch`, `cuda` and `cudnn`.
+
+Alternatively, you can install all required packages specified in `environment.yml`.
 ```
   $ conda env create --name pgdips --file environment.yml
   $ conda activate pgdips
 ```
-
-> **_NOTE:_** Please check if your graphics card is compatible with the following the packages: `cudatoolkit=11.3.1` and `pytorch 1.11.0`. If your GPU will not support them, you can downgrade `pytorch`, `cuda` and `cudnn`.
 
 ## Training on provided images
 
