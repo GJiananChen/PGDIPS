@@ -2,12 +2,9 @@
 
 Pytorch implementation for the manuscript "[General stain deconvolution of histopathology images with physics-guided deep learning](https://www.biorxiv.org/content/10.1101/2022.12.06.519385v1)" 
 
-### Known issues with the current version
-The estimated concentration maps are rotated 90 degrees when they are saved in the output folder, likely due to our recent switch to `skimage.io.imread()`. However the deconvolution process, colored concentration maps and the reconstructed image are not affected. 
-We are working on a fix. For a temporary solution, please uncomment `line 103` and comment `lines 104-105` in `pgdips.py`.
 
 ### Installation
-Python version requirement: 3.7+
+Python version requirement: 3.9+
 
 The easiest installation is through Anaconda or [anaconda/miniconda](https://docs.conda.io/en/latest/miniconda.html)
 
