@@ -94,6 +94,8 @@ class Separation(object):
         self.weight_l1 = float(self.config['loss']['weight_l1'])
         self.weight_exclusion = float(self.config['loss']['weight_exclusion'])
         self.weight_mse = float(self.config['loss']['weight_mse'])
+        if self.show_every > self.iters:
+            self.show_every = self.iters
 
     def preprocess_image(self):
         self.image_filename = self.input
@@ -502,7 +504,7 @@ class Separation(object):
         also updates the best result
         :return:
         """
-        if step == self.iters - 1 or step % 50 == 0:
+        if step == self.iters - 1 or step % 50 == 0 or step % self.show_every == self.show_every - 1:
             Con1_out_np = np.clip(torch_to_np(self.Con1_out), 0, 1)
             Con2_out_np = np.clip(torch_to_np(self.Con2_out), 0, 1)
             image_out_np = np.zeros((1, 3, self.input_size, self.input_size), dtype='float32')
