@@ -27,10 +27,10 @@ Alternatively, you can install all required packages specified in `environment.y
 ```
 
 ### Docker
-
+comming soon
 
 ### Web UI
-
+A user-friendly web interface for PGDIPS is available through the CODIDO platform: https://www.codido.co/marketplace/browse.
 
 ## Training on provided images
 
