@@ -1,6 +1,6 @@
 ## PGDIPS: Physics-guided deep image prior for stain deconvolution
 
-Pytorch implementation for the manuscript "[General stain deconvolution of histopathology images with physics-guided deep learning](https://www.biorxiv.org/content/10.1101/2022.12.06.519385v1)" 
+Pytorch implementation for the manuscript "[General stain deconvolution of histopathology images with physics-guided deep learning](https://www.biorxiv.org/content/10.1101/2022.12.06.519385v1)" The current implementation supports deconvolution of brightfield images stained with two or more colors, and it will be extended to support darkfield images soon.
 
 
 ### Installation
