@@ -1,12 +1,15 @@
-## PGDIPS: Physics-guided deep image prior for stain deconvolution
+# PGDIPS: Physics-guided deep image prior for stain deconvolution
 
 Pytorch implementation for the manuscript "[General stain deconvolution of histopathology images with physics-guided deep learning](https://www.biorxiv.org/content/10.1101/2022.12.06.519385v1)" The current implementation supports deconvolution of brightfield images stained with two or more colors, and it will be extended to support darkfield images soon.
 
 
-### Installation
+## Installation
+### Conda
 Python version requirement: 3.9+
 
-The easiest installation is through Anaconda or [anaconda/miniconda](https://docs.conda.io/en/latest/miniconda.html)
+The recommended installation is through Anaconda or [anaconda/miniconda](https://docs.conda.io/en/latest/miniconda.html)
+
+Installation takes 15-30 minutes on a normal desktop assuming good internet connection.
 
 ```
   $ conda env create --name pgdips 
@@ -22,6 +25,12 @@ Alternatively, you can install all required packages specified in `environment.y
   $ conda env create --name pgdips --file environment.yml
   $ conda activate pgdips
 ```
+
+### Docker
+
+
+### Web UI
+
 
 ## Training on provided images
 
